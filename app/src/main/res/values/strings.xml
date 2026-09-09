@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Multi language support</string>
+    <string name="multi_language_screen_title">Multi Language Screen</string>
+    <string name="select_your_desired_language">Select your desired language</string>
+    <string name="language_english">English</string>
+    <string name="language_swahili">Swahili</string>
+</resources>

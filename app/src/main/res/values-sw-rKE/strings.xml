@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Multi language support</string>
+    <string name="multi_language_screen_title">Skrini ya Lugha Nyingi</string>
+    <string name="select_your_desired_language">Chagua lugha unayopendelea</string>
+    <string name="language_english">Kiingereza</string>
+    <string name="language_swahili">Kiswahili</string>
+</resources>
