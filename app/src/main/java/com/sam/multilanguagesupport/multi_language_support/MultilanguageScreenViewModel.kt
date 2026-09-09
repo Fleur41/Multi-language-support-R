@@ -1,15 +1,15 @@
-package com.sam.multilanguagesupport.datastore
+package com.sam.multilanguagesupport.multi_language_support
 
-import javax.inject.Inject
-import dagger.hilt.android.lifecycle.HiltViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.sam.multilanguagesupport.multi_language_support.Language
+import com.sam.multilanguagesupport.datastore.DatastoreRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 @HiltViewModel
 class MultilanguageScreenViewModel @Inject constructor(
@@ -18,7 +18,7 @@ class MultilanguageScreenViewModel @Inject constructor(
     val language: StateFlow<Language> = datastoreRepository.language
         .stateIn(
             scope = viewModelScope,
-            started = SharingStarted.Companion.Eagerly,
+            started = SharingStarted.Eagerly,
             initialValue = Language.English
         )
 
